@@ -1,5 +1,6 @@
 from gtts import gTTS
-pip install playsound ==
+from playsound import playsound
+# pip install playsound==1.2.2
 class TextToSpeech:
 
     def __init__(self):
@@ -17,6 +18,6 @@ if __name__ == '__main__':
     text = input('변환하려는 문장을 입력하시오.')
     t.set_text(text)
     t.save_mp3(title)
-    playsound("./text.mp3")
+    playsound(f"./{title}.mp3")
 
 
